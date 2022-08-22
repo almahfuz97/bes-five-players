@@ -13,7 +13,7 @@
 <body class="max-w-screen-2xl mx-auto">
     <header class="bg-slate-900 flex justify-between pt-16 ">
         <div>
-            <img class="mt-5" src="svg/mbappeHeader.svg" alt="">
+            <img class="mt-5 w-full" src="svg/mbappeHeader.svg" alt="">
         </div>
         <div>
             <h1 class="text-6xl text-orange-500 text-center mb-8">Select Your Best Five</h1>
@@ -26,18 +26,102 @@
             </div>
         </div>
         <div>
-            <img src="svg/ballCard.svg" alt="">
+            <img class="w-full" src="svg/ballCard.svg" alt="">
         </div>
     </header>
     <!-- main section -->
     <main class="bg-slate-700">
-        <section class="container">
-            <div class="grid grid-cols-2">
-                <div class="grid grid-cols-3">
-                    <div></div>
+        <section>
+            <div class="grid grid-cols-4 p-16 gap-5">
+                <div class="col-span-3 grid grid-cols-3 gap-5">
+                    <div class="text-center bg-slate-900">
+                        <img class="w-full" src="players/messi.svg" alt="">
+                        <div class="pb-2">
+                            <h2 class="text-white text-2xl p-2">Lionel Messi</h2>
+                            <p class="text-slate-400">36 Goals . 120 Assist</p>
+                            <button class="bg-blue-500 px-16 py-1 mt-2 mb-2 text-white rounded-sm">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="text-center bg-slate-900">
+                        <img class="w-full" src="players/neymar.svg" alt="">
+                        <div class="pb-2">
+                            <h2 class="text-white text-2xl p-2">Neymar Jr</h2>
+                            <p class="text-slate-400">36 Goals . 120 Assist</p>
+                            <button class="bg-blue-500 px-16 py-1 mt-2 mb-2 text-white rounded-sm">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="text-center bg-slate-900">
+                        <img class="w-full" src="players/mbappe.svg" alt="">
+                        <div class="pb-2">
+                            <h2 class="text-white text-2xl p-2">Kylian Mbappe</h2>
+                            <p class="text-slate-400">36 Goals . 120 Assist</p>
+                            <button class="bg-blue-500 px-16 py-1 mt-2 mb-2 text-white rounded-sm">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="text-center bg-slate-900">
+                        <img class="w-full" src="players/vitor.svg" alt="">
+                        <div class="pb-2">
+                            <h2 class="text-white text-2xl p-2">Vitor Machado</h2>
+                            <p class="text-slate-400">36 Goals . 120 Assist</p>
+                            <button class="bg-blue-500 px-16 py-1 mt-2 mb-2 text-white rounded-sm">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="text-center bg-slate-900">
+                        <img class="w-full" src="players/ramos.svg" alt="">
+                        <div class="pb-2">
+                            <h2 class="text-white text-2xl p-2">Sergio Ramos</h2>
+                            <p class="text-slate-400">36 Goals . 120 Assist</p>
+                            <button class="bg-blue-500 px-16 py-1 mt-2 mb-2 text-white rounded-sm">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="text-center bg-slate-900">
+                        <img class="w-full" src="players/renato.svg" alt="">
+                        <div class="pb-2">
+                            <h2 class="text-white text-2xl p-2">Renato Sanches</h2>
+                            <p class="text-slate-400">36 Goals . 120 Assist</p>
+                            <button class="bg-blue-500 px-16 py-1 mt-2 mb-2 text-white rounded-sm">SELECT</button>
+                        </div>
+                    </div>
                 </div>
-                <div>
+                <div class="grid grid-cols-1 gap-5">
+                    <div class="bg-slate-900 p-4">
+                        <h3 class="text-center text-white">Selected - V</h3>
+                        <ul id="select-list-id" class="list-decimal p-4 text-white">
 
+                        </ul>
+                    </div>
+                    <div class="bg-slate-900 p-4">
+                        <h3 class="text-white text-center">Budget</h3>
+                        <div class="flex justify-between mt-4">
+                            <p class="text-slate-400">Per Player</p>
+                            <input class="border border-white bg-slate-900" type="number">
+                        </div>
+                        <div class="flex justify-center mt-6">
+                            <button
+                                class="bg-blue-500 text-center px-24 text-white font-semibold py-1 rounded-sm">Calculate</button>
+                        </div>
+                        <div class="flex text-slate-400 mt-6 justify-between">
+                            <p>Player Expenses</p>
+                            <p>$<span>00000</span></p>
+                        </div>
+                        <div class="flex justify-between mt-4">
+                            <p class="text-slate-400">Manager</p>
+                            <input class="border border-white bg-slate-900" type="number">
+                        </div>
+                        <div class="flex justify-between mt-4">
+                            <p class="text-slate-400">Coach</p>
+                            <input class="border border-white bg-slate-900" type="number">
+                        </div>
+                        <div class="flex justify-center mt-6">
+                            <button
+                                class="bg-blue-500 text-center px-20 text-white font-semibold py-1 rounded-sm">Calculate
+                                Total</button>
+                        </div>
+                        <div class="flex text-slate-400 mt-6 justify-between">
+                            <p>Total</p>
+                            <p class="text-orange-600">$<span>00000</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
