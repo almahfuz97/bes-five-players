@@ -48,7 +48,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
         playersExpenses.innerText = listLength * parseFloat(inputValue);
     }
     else {
-        playersExpenses.innerText = '0';
+        playersExpenses.innerText = '000';
 
     }
 })
@@ -64,7 +64,7 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
         total.innerText = parseFloat(inputValueManger) + parseFloat(inputValueCoach) + parseFloat(playersExpenses.innerText);
     }
     else {
-        total.innerText = '0';
+        total.innerText = '000';
 
     }
 })
