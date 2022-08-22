@@ -101,32 +101,35 @@
                         <h3 class="text-white text-center">Budget</h3>
                         <div class="flex justify-between mt-4">
                             <p class="text-slate-400">Per Player</p>
-                            <input class="border border-white bg-slate-900" type="number">
+                            <input id="per-player" class="border border-white bg-slate-900 text-white p-1"
+                                type="number">
                         </div>
                         <div class="flex justify-center mt-6">
-                            <button
+                            <button id="calculate-btn"
                                 class="bg-blue-500 text-center px-24 text-white font-semibold py-1 rounded-sm">Calculate</button>
                         </div>
                         <div class="flex text-slate-400 mt-6 justify-between">
                             <p>Player Expenses</p>
-                            <p>$<span>00000</span></p>
+                            <p>$<span id="players-expenses">00000</span></p>
                         </div>
                         <div class="flex justify-between mt-4">
                             <p class="text-slate-400">Manager</p>
-                            <input class="border border-white bg-slate-900" type="number">
+                            <input id="manager-input" class="text-white p-1 border border-white bg-slate-900"
+                                type="number">
                         </div>
                         <div class="flex justify-between mt-4">
                             <p class="text-slate-400">Coach</p>
-                            <input class="border border-white bg-slate-900" type="number">
+                            <input id="coach-input" class="text-white border p-1 border-white bg-slate-900"
+                                type="number">
                         </div>
                         <div class="flex justify-center mt-6">
-                            <button
+                            <button id="calculate-total-btn"
                                 class="bg-blue-500 text-center px-20 text-white font-semibold py-1 rounded-sm">Calculate
                                 Total</button>
                         </div>
                         <div class="flex text-slate-400 mt-6 justify-between">
                             <p>Total</p>
-                            <p class="text-orange-600">$<span>00000</span></p>
+                            <p class="text-orange-600">$<span id="total">00000</span></p>
                         </div>
                     </div>
                 </div>
