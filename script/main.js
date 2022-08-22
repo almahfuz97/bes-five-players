@@ -6,7 +6,7 @@ function getValueFromInput(inputId) {
         return fieldValue;
     }
     else {
-        alert('please provide a valid number!')
+        alert('please provide a valid number!');
         inputField.value = '';
         return '';
     }
@@ -43,8 +43,10 @@ const playersExpenses = document.getElementById('players-expenses');
 document.getElementById('calculate-btn').addEventListener('click', function () {
     // calling function to get inputvalue
     const inputValue = getValueFromInput('per-player');
-
-    if (inputValue !== '') {
+    if (listLength === 0 && inputValue !== '') {
+        alert('No Players Selected!');
+    }
+    else if (inputValue !== '') {
         playersExpenses.innerText = listLength * parseFloat(inputValue);
     }
     else {
